@@ -1,0 +1,15 @@
+ZUNA V21.1 CORRIGIDA - COMO SUBSTITUIR NO GITHUB
+
+1. Baixe ZUNA_V21_CORRIGIDA_SEM_PASTAS.zip e EXTRAIA o ZIP.
+2. Abra o repositorio atual da ZUNA no GitHub (branch main).
+3. Add file > Upload files > selecione todos os arquivos extraidos.
+4. Confirme a substituicao dos arquivos de mesmo nome; Commit changes.
+5. Netlify: Base directory em branco, Build command npm run build, Publish directory web.
+6. Aguarde o novo deploy e confira nos logs que os testes passaram.
+7. Abra https://SEU-SITE.netlify.app/api/health -> JSON versao 21.1.
+8. Abra https://SEU-SITE.netlify.app/api/ready -> JSON database ready.
+9. Se /api/ready mostrar 503, o problema e no provisionamento/migracao do banco Netlify.
+10. Use Ctrl+Shift+R para nao manter JavaScript antigo no cache.
+
+NOTA: Apenas GitHub + Netlify, mas Netlify Database requer plano baseado em creditos.
+Cadastro do piloto permanece para maiores de 18 anos; nao contorne a verificacao.

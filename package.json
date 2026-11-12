@@ -1,0 +1,21 @@
+{
+  "name": "zuna-v21-github-sem-pastas",
+  "version": "21.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Arquivos 100% soltos no GitHub; build reconstrói diretórios Netlify automaticamente.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node build-flat.mjs && npm run check:built",
+    "check:built": "node --check netlify/functions/api.mjs && node --check netlify/lib/security.mjs && node --check web/app.js && node --test tests/*.test.mjs",
+    "check": "npm run build",
+    "test": "npm run build",
+    "dev": "node build-flat.mjs && netlify dev"
+  },
+  "dependencies": {
+    "@netlify/database": "2.0.3",
+    "@netlify/blobs": "11.1.9"
+  }
+}

@@ -1,0 +1,3 @@
+# A V21 não usa chaves SUPABASE ou CLOUDFLARE.
+# Netlify Database e Netlify Blobs provisionam as credenciais pelo ambiente Netlify.
+# NÃO COLOQUE SENHAS, CÓDIGOS DE RECUPERAÇÃO OU TOKENS NO GITHUB.
